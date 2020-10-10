@@ -49,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
         loginReAct=(TextView)findViewById(R.id.loginRegAct);
 
         awesomeValidation.addValidation(RegisterActivity.this, R.id.email, android.util.Patterns.EMAIL_ADDRESS, R.string.err_email);
-        awesomeValidation.addValidation(RegisterActivity.this, R.id.firstName, "[a-zA-Z\\s]{3,}", R.string.err_name);
+        awesomeValidation.addValidation(RegisterActivity.this, R.id.firstName, "[a-zA-Z\\s]{3,30}", R.string.err_name);
 
         registerRegAct.setOnClickListener(new View.OnClickListener() {
             @Override
